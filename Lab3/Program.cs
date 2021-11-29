@@ -1,4 +1,6 @@
 ﻿using System;
+using Lab3.Builder;
+using Lab3.ConcreteBuilder;
 
 namespace Lab3
 {
@@ -6,7 +8,12 @@ namespace Lab3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Director.Director director = new Director.Director();
+            Zabawka z1 = new Niedzwiadek();
+
+            director.Construct(z1);
+            Product.Product p1 = z1.GetResult();
+            p1.Show(1);
         }
     }
 }

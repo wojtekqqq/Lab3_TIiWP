@@ -10,10 +10,11 @@ namespace Lab3
         {
             Director.Director director = new Director.Director();
             Zabawka z1 = new Niedzwiadek();
+            Zabawka z2 = new Tygrysek();
 
             director.Construct(z1);
             Product.Product p1 = z1.GetResult();
-            p1.Show(1);
+            p1.Show(3);
         }
     }
 }

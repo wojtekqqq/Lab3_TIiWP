@@ -7,15 +7,14 @@ using Lab3.Builder;
 
 namespace Lab3.ConcreteBuilder
 {
-    class Niedzwiadek : Zabawka
+    class Piesek : Zabawka
     {
         private Product.Product produkt = new Product.Product();
 
         public override void Glowa()
         {
-            produkt.Add("Jestem niedźwiadek");
-            produkt.Add("Głowa kręci się");
-
+            produkt.Add("Jestem Piesek");
+            produkt.Add("Szczeka");
         }
 
         public override void Tulow()
@@ -24,17 +23,18 @@ namespace Lab3.ConcreteBuilder
 
         public override void KonczynyGorne()
         {
-            produkt.Add("Prawa łapka rusza się");
-            produkt.Add("Lewa łapka rusza się");
-
         }
 
         public override void KonczynyDolne()
         {
+            produkt.Add("Biegnie");
+            produkt.Add("Siada");
+
         }
 
         public override void Ogon()
         {
+            produkt.Add("Merda ogonem (ogon rusza się)");
         }
 
         public override Product.Product GetResult()

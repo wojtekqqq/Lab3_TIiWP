@@ -7,14 +7,14 @@ using Lab3.Builder;
 
 namespace Lab3.ConcreteBuilder
 {
-    class Niedzwiadek : Zabawka
+    class Kangurek : Zabawka
     {
         private Product.Product produkt = new Product.Product();
 
         public override void Glowa()
         {
-            produkt.Add("Jestem niedźwiadek");
-            produkt.Add("Głowa kręci się");
+            produkt.Add("Jestem Kangurek");
+            produkt.Add("Śpi");
 
         }
 
@@ -24,13 +24,14 @@ namespace Lab3.ConcreteBuilder
 
         public override void KonczynyGorne()
         {
-            produkt.Add("Prawa łapka rusza się");
-            produkt.Add("Lewa łapka rusza się");
+            produkt.Add("Macha łapkami");
+            
 
         }
 
         public override void KonczynyDolne()
         {
+            produkt.Add("Skacze (nogi się ruszają)");
         }
 
         public override void Ogon()

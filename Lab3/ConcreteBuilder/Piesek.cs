@@ -13,6 +13,7 @@ namespace Lab3.ConcreteBuilder
 
         public override void Glowa()
         {
+            produkt.Add("");
             produkt.Add("Jestem Piesek");
             produkt.Add("Szczeka");
         }
@@ -20,16 +21,14 @@ namespace Lab3.ConcreteBuilder
         public override void Tulow()
         {
         }
+        public override void KonczynyDolne()
+        {
+            produkt.Add("Siada");
+
+        }
 
         public override void KonczynyGorne()
         {
-        }
-
-        public override void KonczynyDolne()
-        {
-            produkt.Add("Biegnie");
-            produkt.Add("Siada");
-
         }
 
         public override void Ogon()

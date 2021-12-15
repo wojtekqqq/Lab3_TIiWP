@@ -17,16 +17,20 @@ namespace Lab3.Product
 
         public string Show(int przycisk)
         {
-            string akcja = czesci[przycisk];
-            /*            
-                        Console.WriteLine("\nZabawka");
+            try
+            {
+                string akcja = czesci[przycisk];
+                Console.WriteLine(akcja);
+                return akcja;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Nie ma takiego przycisku, kończymy zabawę.");
+                return null;
 
-                        foreach (string czesc in czesci)
-                        {
-                            Console.WriteLine(czesc);
-                        }*/
-            Console.WriteLine(akcja);
-            return akcja;
+                /*                Console.WriteLine(e);
+                                throw;*/
+            }
         }
     }
 }

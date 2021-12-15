@@ -10,8 +10,8 @@ namespace Lab3.Builder
     {
         public abstract void Glowa();
         public abstract void Tulow();
-        public abstract void KonczynyGorne();
         public abstract void KonczynyDolne();
+        public abstract void KonczynyGorne();
         public abstract void Ogon();
         public abstract Product.Product GetResult();
     }

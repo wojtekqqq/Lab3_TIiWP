@@ -13,6 +13,7 @@ namespace Lab3.ConcreteBuilder
 
         public override void Glowa()
         {
+            produkt.Add("");
             produkt.Add("Jestem Kangurek");
             produkt.Add("Śpi");
 
@@ -21,17 +22,13 @@ namespace Lab3.ConcreteBuilder
         public override void Tulow()
         {
         }
-
-        public override void KonczynyGorne()
-        {
-            produkt.Add("Macha łapkami");
-            
-
-        }
-
         public override void KonczynyDolne()
         {
             produkt.Add("Skacze (nogi się ruszają)");
+        }
+        public override void KonczynyGorne()
+        {
+            produkt.Add("Macha łapkami");
         }
 
         public override void Ogon()

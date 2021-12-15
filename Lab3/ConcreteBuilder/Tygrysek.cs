@@ -13,25 +13,23 @@ namespace Lab3.ConcreteBuilder
 
         public override void Glowa()
         {
+            produkt.Add("");
             produkt.Add("Jestem tygrysek");
         }
 
         public override void Tulow()
         {
         }
-
-        public override void KonczynyGorne()
-        {
-            produkt.Add("Odgania łapą muchy");
-            produkt.Add("Lewa łapka rusza się");
-
-        }
-
         public override void KonczynyDolne()
         {
             produkt.Add("Biegnie");
         }
 
+        public override void KonczynyGorne()
+        {
+            produkt.Add("Odgania łapą muchy");
+            produkt.Add("Lewa łapka rusza się");
+        }
         public override void Ogon()
         {
             produkt.Add("Ogon kiwa się");
